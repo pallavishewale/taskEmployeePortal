@@ -22,14 +22,17 @@
         <input type="text" class="id item" id="id" placeholder="Numeric Id">
         <label  class="error" id="id-error">I am here</label>
         </div>
+
         <div class="block">
         <input type="text" class="name item" id="name" placeholder=" Name: john mike">
         <label  class="error" id="name-error">I am here</label>
         </div>
+
         <div class="block">
         <input type="text" class="age item" id="age" placeholder="Age: 18 to 60">
         <label  class="error" id="age-error">I am here</label>
         </div>
+
         <div class="block">
         <select name="designation" id="designation" class="item" aria-placeholder="Designation">
             <option value="Designation" style="display: none;">Designation</option>
@@ -58,6 +61,7 @@
         <label  class="error" id="gender-error">I am here</label>
         </div>
         </div>
+
         <button onclick="add_record()" class="submit item">Add</button>
       
         
@@ -87,31 +91,31 @@
     <div class="model">
      <span> <label>ID :</label>
             <lable id="id-lbl"> </lable></span>
-    <span>
-        <label>Name :</label>
-        <lable id="name-lbl"></lable>
-     </span>
-     <span>
-        <label>Designation :</label>
-        <lable id="Designation-lbl"></lable>
-    </span>
-    <span>
-    <label>Age :</label>
-    <lable id="age-lbl"></lable>
-</span>
-<span>
-    <label>gender:</label>
-    <lable id="gender-lbl">Male</lable>
-    </span>
-</div>
+      <span>
+            <label>Name :</label>
+            <lable id="name-lbl"></lable>
+       </span>
+       <span>
+            <label>Designation :</label>
+            <lable id="Designation-lbl"></lable>
+        </span>
+        <span>
+            <label>Age :</label>
+            <lable id="age-lbl"></lable>
+        </span>
+        <span>
+            <label>gender:</label>
+            <lable id="gender-lbl">Male</lable>
+        </span>
+    </div>
    </div>
 
-   <script>
+<script>
     var modal = document.getElementById('display-block');
     window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
    </script>
 </body>

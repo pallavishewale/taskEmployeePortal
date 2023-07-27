@@ -1,10 +1,10 @@
 
 //edit records
 function edit_record(button){
-  
+
     const row = button.parentNode.parentNode;
     let emp_id = row.cells[0].textContent;
-   
+
     const indexToEdit =  employee.findIndex(obj => obj.id == emp_id);
     
    
@@ -17,7 +17,7 @@ function edit_record(button){
      document.getElementById('url').value = employee[indexToEdit]['url'];
      console.log(employee_tokens);
 
-     
+
      employee_tokens.splice(employee_tokens.indexOf(emp_id),1);
      console.log(employee_tokens);
      deleteObject(indexToEdit);
