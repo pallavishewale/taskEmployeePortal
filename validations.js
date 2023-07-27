@@ -63,10 +63,10 @@ function checkName(name) {
 
   document.getElementById('name-error').style.display = "none";
   error_msg = "";
-
+   name = name.trimStart();
   if (name != "") {
 
-    if (!/^[a-zA-Z\s]+$/.test(name)) {
+    if (!/^[a-zA-Z][a-zA-Z\s]+$/.test(name)) {
       error_msg = "Enter only alphabets.";
     }
   }
@@ -113,7 +113,7 @@ function checkAge(age) {
 
 }
 
-
+// validations for desigation
 function checkDesiganation(designation) {
   document.getElementById('designation-error').style.display = "none";
   console.log(designation)
@@ -133,6 +133,7 @@ function checkDesiganation(designation) {
 
 // validations for url
 function checkUrl(url){
+  url = url.trimStart();
   document.getElementById('url-error').style.display = "none";
   console.log(url);
   error_msg = "";
